@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Montserrat:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+.main {
+    flex: 1 1 auto;
+    margin: 0 auto;
+    min-width: 62.5rem;
+}
+h3 {
+    font-family: 'Kablammo', cursive;
+    font-size: 1.575rem;
+}
+.boxMainLogo {
+    padding: 1em;
+    background-color: rgb(198, 167, 41);
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px 5px rgba(82, 71, 30, 0.77);
+}
+.navLikes {
+    border-bottom: 1px gray dotted;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    max-width: 100%;
+    padding: 1em;
+}
+
+.countLikes,
+.countDislikes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+.mainBoxComment {
+    display: flex;
+    justify-content: center;
+    gap: 1.625rem;
+}
+.counterLikes, 
+.counterDislikes {
+    font-size: 1.65rem;
+    font-weight: bold;
+    font-family: 'Kablammo', cursive;
+}
+.dogPhoto {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    flex: 1 1 auto;
+}
+.likesNav {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.userNav {
+    position: absolute;
+    z-index: 5;
+    right: 10px;
+    padding: 0.3em;
+}
+.imgBox {
+    position: relative;
+    z-index: 10;
+    max-width: 660px;
+    max-height: 460px;
+    flex: 1 1 auto;
+    display: flex;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.btnNav {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1.4em;
+}
+.btnNext {
+    padding: 1em;
+    border-radius: 0.3125rem;
+    color: white;
+    background-color: green;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.comment {
+    position: absolute;
+    top: 0.1875rem;
+    right: 5.3125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.amountDownloadBox {
+    padding: 0.7em;
+    background-color: rgb(198, 167, 41);
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px 5px rgba(82, 71, 30, 0.77);
+}
+.amountDownloadBox label{
+    font-family: 'Kablammo', cursive;
+    padding: 0.3em;
+    font-weight: bold;
+}
+#amountDownloadPhotos {
+    max-width: 3.8rem;
+    padding: 0.6em;
+    border-radius: 0.625rem;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+#amountDownloadPhotos::placeholder {
+    font-family: 'Kablammo', cursive;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.imgLikes {
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.blurEl{
+    filter: blur(5px);
+}
+
+/* Modal Window */
+.modalContainer {
+    position: sticky;
+    top: 50%;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.modalBox {
+    position: absolute;
+    top: 0;
+    border: 0.0625rem solid gray;
+    border-radius: 0.625rem;
+    padding: 0.5em;
+}
+.modalHead {
+    display: flex;
+    justify-content: flex-end;
+}
+.modalBody {
+}
+#textAreaModalWindows {
+    border-radius: 0.625rem;
+    width: 300px;
+    filter: opacity(60%);
+    font-size: 18px;
+    color: black;
+}
+#textAreaModalWindows::placeholder {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Kablammo', cursive;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.modalFooter {
+    display: flex;
+    justify-content: center;
+}
+.sendBtn {
+    color: white;
+    padding: 1em 3em;
+    background-color: blue;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-family: 'Kablammo', cursive;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.closeModal {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+}
